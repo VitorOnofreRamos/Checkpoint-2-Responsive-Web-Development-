@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+    color: #eee;
+    font-family: 'Roboto', sans-serif;
+}
+
+#img1{
+    background-image: url(/src/img/thumb-1920-1168976.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.andar{
+    display: flex;
+}
+
+.andar1{
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.andar1 > .title-box{
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'Black Ops One', sans-serif;
+    font-weight: bolder;
+    color: #ebebebab;
+}
+
+.andar1 > .title-box > h1{
+    margin: 3px 0;
+    font-size: 8vh;
+}
+
+.andar1 > .title-box > span{
+    font-size: 3.5vh;
+}
+
+.arrow {
+    border: dashed #ebebebab;
+    border-width: 0 1vh 1vh 0;
+    display: inline-block;
+    padding: 2vh 2vh;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.andar2{
+    margin: 0 10px;
+    flex-direction: row;
+    background-color: #242424;
+    border-top: 60px solid #1b1b1b;
+}
+
+.andar2 > .conteudo{
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #303030;
+}
+
+.andar2 > .conteudo > h1{
+    font-size: 40vh;
+    font-family: 'Black Ops One', sans-serif;
+}
+
+.andar2 > .conteudo > h2{
+    margin: 0 20px 5px 20px;
+    border-bottom: 2px solid #eee;
+    font-size: 30px;
+}
+
+.andar2 > .conteudo > p{
+    margin: 20px 50px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.andar2 > .conteudo > .imagem{
+    margin: 30% 20px
+}
+
+.andar2 > .conteudo > .imagem > img{
+    width: 100%;
+    height: 100%;
+}
+
+.andar2 > .conteudo > .video{
+    margin: 5px 20px;
+    height: 70vh;
+}
+
+.andar2 > .conteudo > .video > iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.andar2 > .divisao{
+    width: 3%;
+}
+
+/*Condições*/
+@media screen and (max-width:800px) {
+    .andar1{
+        width: 180vh;
+    }
+
+    .andar2{
+        margin-left: 30px;
+        width: 170vh;
+        flex-direction: column;
+    }
+
+    .andar2 > .conteudo > .imagem{
+        margin: 10% 15%;
+    }
+
+    .andar2 > .conteudo > .video{
+        margin: 30px 20px;
+    }
+
+    .andar2 > .divisao{
+        height: 20px;
+    }
+}
